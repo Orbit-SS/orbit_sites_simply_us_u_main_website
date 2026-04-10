@@ -1,0 +1,349 @@
+{
+  "site": {
+    "title": "Simply Us & U — Digital Marketing, Web Design & Software Development",
+    "description": "We help businesses grow through digital marketing, social content creation, website design, hosting, and custom software development.",
+    "copyright": "© 2026 Simply Us & U. All rights reserved.",
+    "founded": 2017,
+    "tagline": "Your Growth. Our Obsession."
+  },
+  "navigation": {
+    "logo_text": "Simply Us & U",
+    "links": [
+      { "label": "Services", "href": "/services" },
+      { "label": "About", "href": "/about" },
+      { "label": "Case Studies", "href": "/case-studies" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "cta": { "label": "Get Started", "href": "/contact" }
+  },
+  "hero": {
+    "headline": "Digital Marketing. Web Design. Software Development.",
+    "subheadline": "The growth engine behind brands that move fast. Marketing, design, and technology — deployed as one integrated system.",
+    "ctas": [
+      { "label": "Get a Free Quote", "href": "/contact", "style": "primary" },
+      { "label": "Or Email Us", "href": "mailto:Support@SimplyUsandU.com", "style": "secondary" }
+    ]
+  },
+  "stats": [
+    { "value": "100+", "label": "CLIENTS SERVED" },
+    { "value": "312%", "label": "AVG ROI" },
+    { "value": "4.2M+", "label": "IMPRESSIONS" },
+    { "value": "5-STAR", "label": "RATING" }
+  ],
+  "services": [
+    {
+      "number": "01",
+      "title": "Digital Marketing",
+      "subtitle": "SEO, PPC & FULL-FUNNEL STRATEGY",
+      "description": "Paid ads, SEO, email funnels, and full-funnel campaigns that deliver measurable ROI.",
+      "href": "/services/digital-marketing",
+      "features": [
+        "Full-funnel campaign strategy & execution",
+        "SEO audits with keyword research & link building",
+        "Google Ads & Bing Ads management",
+        "Email automation sequences & nurture flows"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=90"
+    },
+    {
+      "number": "02",
+      "title": "Social Content Creation",
+      "subtitle": "STRATEGY, CONTENT & COMMUNITY",
+      "description": "Scroll-stopping content, reels, graphics, and social strategy that grows your audience.",
+      "href": "/services/social-content-creation",
+      "features": [
+        "Platform-specific content calendars",
+        "Reels, carousels & graphic design",
+        "Community management & engagement",
+        "Monthly analytics & growth reports"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1200&q=90"
+    },
+    {
+      "number": "03",
+      "title": "Website Design",
+      "subtitle": "UI/UX, MOBILE-FIRST & CONVERSION",
+      "description": "Custom, conversion-focused websites that look premium and perform even better.",
+      "href": "/services/website-design",
+      "features": [
+        "Custom UI/UX design & prototyping",
+        "Mobile-first responsive development",
+        "Sales funnels & landing page optimization",
+        "E-commerce store setup & configuration"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1547658719-da2b51169176?w=1200&q=90"
+    },
+    {
+      "number": "04",
+      "title": "Website Hosting",
+      "subtitle": "UPTIME, SECURITY & PERFORMANCE",
+      "description": "Fast, secure, and reliable hosting with 99.9% uptime and hands-free management.",
+      "href": "/services/website-hosting",
+      "features": [
+        "99.9% uptime with 24/7 monitoring",
+        "Free SSL certificates & firewall protection",
+        "Daily automated backups with one-click restore",
+        "Managed WordPress updates & staging environments"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=90"
+    },
+    {
+      "number": "05",
+      "title": "Software & App Development",
+      "subtitle": "CUSTOM APPS, CRM & AUTOMATION",
+      "description": "Custom apps, CRM integrations, workflow automation, and scalable software solutions.",
+      "href": "/services/software-development",
+      "features": [
+        "Custom web & mobile application development",
+        "CRM integration & data migration",
+        "Workflow automation & process optimization",
+        "RESTful & GraphQL API development"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=90"
+    },
+    {
+      "number": "06",
+      "title": "Ad Creation & Campaign Management",
+      "subtitle": "PAID MEDIA & FULL-FUNNEL",
+      "description": "High-converting Google Ads, Meta campaigns, creative design, and ongoing A/B testing.",
+      "href": "/services/ad-creation",
+      "features": [
+        "Google Ads & Meta Ads campaign management",
+        "Custom ad creative design & video production",
+        "Audience targeting & retargeting strategy",
+        "Ongoing A/B testing & performance optimization"
+      ],
+      "image_url": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&q=90"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "DISCOVERY",
+      "description": "Deep audit of your current channels, tech stack, and key performance metrics."
+    },
+    {
+      "step": "02",
+      "title": "STRATEGY",
+      "description": "Custom growth blueprint aligned to your goals, timeline, and budget."
+    },
+    {
+      "step": "03",
+      "title": "EXECUTION",
+      "description": "We deploy, manage, and iterate fast — with weekly reporting and full transparency."
+    },
+    {
+      "step": "04",
+      "title": "SCALE",
+      "description": "Double down on what works, automate the rest, and accelerate growth."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Chen",
+      "title": "CEO",
+      "company": "Bloom Wellness Studio",
+      "quote": "Simply Us & You transformed our social media presence. We went from inconsistent posting to a fully automated content machine that generates real leads."
+    },
+    {
+      "name": "Marcus Rivera",
+      "title": "COO",
+      "company": "Apex Property Group",
+      "quote": "Their operations consulting cut our project delivery time in half. We finally have systems that scale with us instead of holding us back."
+    },
+    {
+      "name": "Priya Patel",
+      "title": "Founder",
+      "company": "Elevate Coaching Co",
+      "quote": "The marketing automation they set up pays for itself every month. Our team can focus on clients instead of chasing leads manually."
+    },
+    {
+      "name": "James Thornton",
+      "title": "Managing Director",
+      "company": "Oakridge Financial Advisors",
+      "quote": "Our new website tripled our conversion rate in the first month. The design is premium and the performance is blazing fast — exactly what we needed."
+    },
+    {
+      "name": "Diana Reyes",
+      "title": "Owner",
+      "company": "Luxe Salon & Spa",
+      "quote": "They built a custom booking system that replaced three separate tools we were paying for. Our staff saves hours every week and clients love the experience."
+    },
+    {
+      "name": "Dr. Kevin Nguyen",
+      "title": "Partner",
+      "company": "Clearview Dental Group",
+      "quote": "From SEO to paid ads, they took us from page three to the top of Google in under six months. The ROI has been incredible for our practice."
+    }
+  ],
+  "cta_section": {
+    "eyebrow": "FREE ESTIMATES",
+    "heading": "READY TO ACCELERATE?",
+    "description": "Book a free 30-minute strategy call. No sales deck — just a candid conversation about where you are and where you want to go.",
+    "ctas": [
+      { "label": "CALL NOW", "href": "tel:+17705240488", "style": "primary" },
+      { "label": "EMAIL US", "href": "/contact", "style": "secondary" }
+    ]
+  },
+  "footer": {
+    "tagline": "Your Growth. Our Obsession.",
+    "description": "We help businesses grow through digital marketing, web design, and software development.",
+    "logo": "/logo-transparent.png",
+    "link_groups": [
+      {
+        "heading": "Services",
+        "links": [
+          { "label": "Digital Marketing", "href": "/services/digital-marketing" },
+          { "label": "Social Content Creation", "href": "/services/social-content-creation" },
+          { "label": "Website Design", "href": "/services/website-design" },
+          { "label": "Website Hosting", "href": "/services/website-hosting" },
+          { "label": "Software & App Development", "href": "/services/software-development" },
+          { "label": "Ad Creation & Campaigns", "href": "/services/ad-creation" }
+        ]
+      },
+      {
+        "heading": "Company",
+        "links": [
+          { "label": "About", "href": "/about" },
+          { "label": "Case Studies", "href": "/case-studies" },
+          { "label": "Blog", "href": "/blog" },
+          { "label": "FAQ", "href": "/faq" },
+          { "label": "Contact", "href": "/contact" }
+        ]
+      }
+    ],
+    "legal": [
+      { "label": "Privacy", "href": "/privacy" },
+      { "label": "Terms", "href": "/terms" }
+    ]
+  },
+  "contact": {
+    "phone": "(770) 524-0488",
+    "phone_href": "tel:+17705240488",
+    "email": "Support@SimplyUsandU.com",
+    "email_href": "mailto:Support@SimplyUsandU.com",
+    "location": "Remote — Serving clients nationwide",
+    "hours": "Mon–Fri, 9am–6pm EST",
+    "contact_page_heading": "Let's Build Something Great",
+    "contact_page_subtext": "Have a project in mind? We'd love to hear about it. Fill out the form below and we'll get back to you within 24 hours.",
+    "form_fields": [
+      { "name": "name", "label": "Name", "type": "text", "required": true },
+      { "name": "email", "label": "Email", "type": "email", "required": true },
+      { "name": "company", "label": "Company", "type": "text", "required": false },
+      { "name": "phone", "label": "Phone", "type": "tel", "required": false },
+      {
+        "name": "service",
+        "label": "Service Interested In",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Digital Marketing",
+          "Social Media Management",
+          "Website Design & Development",
+          "Website Hosting & Maintenance",
+          "Software Development",
+          "SEO & PPC Advertising",
+          "Other"
+        ]
+      },
+      { "name": "message", "label": "Message", "type": "textarea", "required": true }
+    ]
+  },
+  "about": {
+    "founded": 2017,
+    "team_size": "15+",
+    "clients_served": "100+",
+    "projects_delivered": "500+",
+    "client_satisfaction": "95%",
+    "value_proposition": "Big-agency results without the big-agency price tag.",
+    "core_values": [
+      {
+        "title": "Innovation",
+        "description": "Staying ahead of trends with cutting-edge strategies for competitive advantage."
+      },
+      {
+        "title": "Partnership",
+        "description": "Functioning as an extension of clients' teams with transparency and trust."
+      },
+      {
+        "title": "Results",
+        "description": "Data-driven, results-oriented strategies with measurable optimization."
+      }
+    ],
+    "timeline": [
+      { "year": 2017, "event": "Founded on belief small businesses deserve quality without premium pricing." },
+      { "year": 2018, "event": "Secured first enterprise-level partnership." },
+      { "year": 2020, "event": "Expanded into custom software and SaaS solutions." },
+      { "year": 2024, "event": "Reached 100 clients milestone." }
+    ]
+  },
+  "case_studies": [
+    {
+      "client": "Bloom Wellness Studio",
+      "industry": "Health & Wellness",
+      "key_metric": "400% follower growth",
+      "result": "Revenue increased 185% in first six months",
+      "services": ["Social Media", "Content Creation", "Paid Ads"]
+    },
+    {
+      "client": "Apex Property Group",
+      "industry": "Real Estate",
+      "key_metric": "2x faster delivery",
+      "result": "Project delivery time cut in half; overhead reduced 35%",
+      "services": ["Software Development", "Process Automation"]
+    },
+    {
+      "client": "Elevate Coaching Co",
+      "industry": "Professional Services",
+      "key_metric": "312% ROI increase",
+      "result": "Tripled return on ad spend; freed 15 hours weekly",
+      "services": ["Marketing Automation", "Email Marketing", "CRM Setup"]
+    },
+    {
+      "client": "Oakridge Financial",
+      "industry": "Finance",
+      "key_metric": "3x conversion rate",
+      "result": "Tripled monthly appointment bookings within 90 days",
+      "services": ["Web Design", "SEO", "Conversion Optimization"]
+    },
+    {
+      "client": "Luxe Salon & Spa",
+      "industry": "Beauty & Wellness",
+      "key_metric": "60% time saved",
+      "result": "Eliminated double-bookings via custom app",
+      "services": ["Custom App", "Software Development", "UX Design"]
+    },
+    {
+      "client": "Clearview Dental",
+      "industry": "Healthcare",
+      "key_metric": "Page 1 in 6 months",
+      "result": "Ranked on Google's first page for 12 top keywords",
+      "services": ["SEO", "PPC Advertising", "Local Marketing"]
+    }
+  ],
+  "digital_marketing_page": {
+    "heading": "Digital Marketing That Drives Revenue",
+    "subheading": "Data-driven paid media, organic search, email automation, and conversion optimization to turn your marketing budget into predictable, scalable revenue.",
+    "stats": [
+      { "value": "312%", "label": "Average ROI" },
+      { "value": "4.2M+", "label": "Impressions" },
+      { "value": "100+", "label": "Campaigns Managed" },
+      { "value": "85%", "label": "Client Retention Rate" }
+    ],
+    "services": [
+      "Google & Meta Ads Management",
+      "Search Engine Optimization",
+      "Email Marketing & Automation",
+      "Conversion Rate Optimization",
+      "Analytics & Reporting",
+      "Marketing Strategy"
+    ],
+    "process": [
+      { "step": "Audit", "description": "Review current marketing channels and performance." },
+      { "step": "Strategy", "description": "Build a tailored growth plan." },
+      { "step": "Launch", "description": "Deploy campaigns with precision." },
+      { "step": "Optimize", "description": "Continuously test and improve results." }
+    ]
+  }
+}

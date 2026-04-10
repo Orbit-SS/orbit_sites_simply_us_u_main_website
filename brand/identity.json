@@ -1,0 +1,164 @@
+{
+  "brand": {
+    "name": "Simply Us & U",
+    "tagline": "Your Growth. Our Obsession.",
+    "url": "https://www.simplyusandu.com",
+    "industry": "Digital Marketing & Software Agency",
+    "target_market": "Small to mid-sized businesses seeking growth",
+    "value_proposition": "Big-agency results without the big-agency price tag",
+    "founding_year": 2017
+  },
+  "colors": {
+    "primary_background": "#0B0B0D",
+    "primary_text": "#FFFFFF",
+    "secondary_text": "#9CA3AF",
+    "accent": "#F97316",
+    "accent_name": "Orange",
+    "border_subtle": "rgba(255, 255, 255, 0.06)",
+    "dark_mode": true,
+    "palette": [
+      {
+        "name": "Obsidian (Background)",
+        "hex": "#0B0B0D",
+        "usage": "Primary page background, cards, footer"
+      },
+      {
+        "name": "White (Primary Text)",
+        "hex": "#FFFFFF",
+        "usage": "Headings, body text, nav links, CTA labels"
+      },
+      {
+        "name": "Slate Gray (Secondary Text)",
+        "hex": "#9CA3AF",
+        "usage": "Subheadings, descriptions, muted labels, meta text"
+      },
+      {
+        "name": "Vivid Orange (Accent / Brand)",
+        "hex": "#F97316",
+        "usage": "Section eyebrows, icon accents, CTA highlights, stat labels, numbered steps"
+      },
+      {
+        "name": "White Ghost (Border)",
+        "hex": "rgba(255,255,255,0.06)",
+        "usage": "Dividers, card borders, section separators"
+      }
+    ]
+  },
+  "typography": {
+    "primary_font": "Plus Jakarta Sans",
+    "primary_font_type": "Variable",
+    "secondary_font": "Inter",
+    "secondary_font_type": "Variable",
+    "css_variable": "--font-inter",
+    "fallback_stack": "system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
+    "hierarchy": {
+      "display": { "font": "Plus Jakarta Sans", "weight": "700-800", "notes": "Hero headline, section titles" },
+      "heading": { "font": "Plus Jakarta Sans", "weight": "600-700", "notes": "Service titles, testimonial names" },
+      "subheading": { "font": "Inter", "weight": "500-600", "notes": "Section eyebrows, card subtitles (often uppercase)" },
+      "body": { "font": "Inter", "weight": "400", "notes": "Descriptions, feature lists, footer text" },
+      "label": { "font": "Inter", "weight": "600", "notes": "Stats, numbered steps — often uppercase tracking-widest" }
+    }
+  },
+  "logo": {
+    "primary": "/logo-transparent.png",
+    "next_optimized": "/_next/image?url=%2Flogo-transparent.png&w=3840&q=75",
+    "favicon": "/favicon.ico",
+    "background": "Transparent (works on dark background)"
+  },
+  "imagery": {
+    "style": "Professional, high-contrast Unsplash photography",
+    "treatment": "Dark overlay / gradient fade to background on service cards",
+    "sources": ["Unsplash"],
+    "images": [
+      {
+        "id": "digital-marketing",
+        "description": "Digital marketing / analytics dashboard",
+        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=90",
+        "local": "images/service-digital-marketing.jpg"
+      },
+      {
+        "id": "social-content",
+        "description": "Social media / content creation",
+        "url": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1200&q=90",
+        "local": "images/service-social-content.jpg"
+      },
+      {
+        "id": "website-design",
+        "description": "Web/UI design workspace",
+        "url": "https://images.unsplash.com/photo-1547658719-da2b51169176?w=1200&q=90",
+        "local": "images/service-website-design.jpg"
+      },
+      {
+        "id": "website-hosting",
+        "description": "Server / data center infrastructure",
+        "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=90",
+        "local": "images/service-website-hosting.jpg"
+      },
+      {
+        "id": "software-development",
+        "description": "Code on monitor / software development",
+        "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=90",
+        "local": "images/service-software-development.jpg"
+      },
+      {
+        "id": "ad-creation",
+        "description": "Advertising / campaign strategy",
+        "url": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&q=90",
+        "local": "images/service-ad-creation.jpg"
+      }
+    ]
+  },
+  "design_system": {
+    "framework": "Next.js (App Router)",
+    "css_framework": "Tailwind CSS",
+    "color_mode": "Dark (forced — dark class on <html>)",
+    "layout_max_width": "max-w-7xl",
+    "section_padding": "py-16 lg:py-20",
+    "border_radius": "rounded (Tailwind defaults)",
+    "responsive_breakpoints": ["sm (640px)", "md (768px)", "lg (1024px)", "xl (1280px)"],
+    "grid": "CSS Grid + Flexbox via Tailwind utilities",
+    "component_patterns": {
+      "section_eyebrow": "Uppercase small text in orange (#F97316), letter-spacing wide",
+      "section_heading": "Large white bold heading below eyebrow",
+      "service_card": "Dark card with image overlay, numbered step, title, subtitle, feature list",
+      "stat_block": "Large white number + small uppercase orange/gray label",
+      "testimonial_card": "Dark card with quote, author name, title/company",
+      "cta_button_primary": "Orange background (#F97316), white text, rounded, padding px-6 py-3",
+      "cta_button_secondary": "Transparent / border-white, white text"
+    }
+  },
+  "tone_and_voice": {
+    "personality_traits": [
+      "Direct and action-oriented",
+      "Confident without being arrogant",
+      "Growth-focused",
+      "Results-obsessed",
+      "Modern and tech-forward",
+      "Client-centric"
+    ],
+    "messaging_pillars": [
+      "Integrated approach (marketing + design + technology as one system)",
+      "Measurable results with transparency",
+      "Speed and efficiency",
+      "Premium quality at accessible price",
+      "Automation and scalability"
+    ],
+    "power_words": [
+      "Growth", "Accelerate", "Scale", "Deploy", "Obsession",
+      "Measurable", "Revenue", "ROI", "Automation", "Engine",
+      "Integrated", "Premium", "Blazing fast", "Predictable", "Transparent"
+    ],
+    "avoid": [
+      "Passive language",
+      "Vague promises without metrics",
+      "Corporate jargon without substance"
+    ]
+  },
+  "meta": {
+    "page_title_format": "Simply Us & U — [Page Description]",
+    "meta_description": "We help businesses grow through digital marketing, social content creation, website design, hosting, and custom software development.",
+    "og_site_name": "Simply Us & U",
+    "robots": "index, follow (assumed)",
+    "language": "en-US"
+  }
+}
