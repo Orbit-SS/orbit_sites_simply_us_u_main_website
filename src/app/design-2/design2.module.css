@@ -1,0 +1,781 @@
+/* ─────────────────────────────────────────────────────────────
+   DESIGN 2 — RAW POWER — Brutalist
+   Font: Space Grotesk (var --font-space)
+   BG: #000  Text: #FFF  Accent: #F0E000
+   NO animations (except marquee ticker). NO hover effects.
+   NO border-radius anywhere.
+───────────────────────────────────────────────────────────── */
+
+/* Reset & base */
+.root {
+  font-family: var(--font-space), 'Space Grotesk', sans-serif;
+  background: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Back link */
+.backLink {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background: #f0e000;
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ─── HERO ─────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroCornerLeft {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: monospace;
+  z-index: 2;
+}
+
+.heroCornerRight {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+.heroCornerRight a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Hero content */
+.heroContent {
+  padding: 6rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100svh;
+}
+
+.heroGiant {
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+}
+
+.heroRule {
+  width: 120px;
+  height: 4px;
+  background: #f0e000;
+  margin-bottom: 1.25rem;
+  border: none;
+}
+
+.heroTagline {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f0e000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.heroCtaYellow {
+  background: #f0e000;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+.heroCtaWhite {
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: 3px solid #ffffff;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+/* Stats ticker */
+.heroTicker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  overflow: hidden;
+  border-top: 2px solid #ffffff;
+  padding: 0.65rem 0;
+}
+
+.heroTickerInner {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.heroTickerInner span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f0e000;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding-right: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ─── SERVICES ─────────────────────────────────────────────── */
+.services {
+  background: #000000;
+  padding: 5rem 0 0;
+}
+
+.sectionLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+
+.servicesH2 {
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicesStrips {
+  width: 100%;
+}
+
+.strip {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2.5rem 2rem;
+  border-top: 3px solid #ffffff;
+  background: #000000;
+  color: #ffffff;
+  max-width: 100%;
+}
+
+/* Even strips: yellow bg, black text */
+.stripAlt {
+  background: #f0e000;
+  color: #000000;
+  border-top: 3px solid #f0e000;
+}
+
+.stripNum {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f0e000;
+  min-width: 80px;
+  line-height: 1;
+  flex-shrink: 0;
+  padding-top: 0.1rem;
+}
+
+/* On alt (yellow) strip, number goes black */
+.stripAlt .stripNum {
+  color: #000000;
+}
+
+.stripContent {
+  flex: 1;
+  padding: 0 2rem 0 1rem;
+}
+
+.stripTitle {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.stripDesc {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+  color: inherit;
+}
+
+.stripFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.stripFeatures li {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: inherit;
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.5;
+}
+.stripFeatures li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.stripArrow {
+  font-size: 2rem;
+  font-weight: 900;
+  color: inherit;
+  align-self: center;
+  flex-shrink: 0;
+  padding-left: 1rem;
+}
+
+/* ─── NUMBERS / WHY US ──────────────────────────────────────── */
+.numbers {
+  background: #000000;
+  padding: 5rem 0;
+  border-top: 3px solid #ffffff;
+}
+
+.numbersH2 {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+
+.statsStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 4rem;
+}
+
+.statRow {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  flex-wrap: wrap;
+}
+
+.statValue {
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 900;
+  color: #f0e000;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Value pillars */
+.valuePillars {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 4rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.valuePillar {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 3rem;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.valuePillarWord {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  min-width: 240px;
+  flex-shrink: 0;
+}
+
+.valuePillarDesc {
+  font-size: 0.9rem;
+  color: #ffffff;
+  line-height: 1.6;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+/* Timeline */
+.numbersTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timelineRow {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timelineYear {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #f0e000;
+  min-width: 60px;
+}
+
+.timelineEvent {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ─── WORK / PORTFOLIO ──────────────────────────────────────── */
+.work {
+  background: #000000;
+  padding: 5rem 0;
+  border-top: 3px solid #ffffff;
+}
+
+.workH2 {
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  margin-bottom: 3rem;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.workItem {
+  background: #000000;
+  border: 2px solid #ffffff;
+  padding: 1.5rem;
+  border-radius: 0;
+  margin: -1px;
+}
+
+.workClient {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #f0e000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.25rem;
+}
+
+.workIndustry {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.75rem;
+}
+
+.workMetricWrap {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.workMetric {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.workMetricLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.workResult {
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin: 0 0 1rem;
+  font-weight: 400;
+}
+
+.workTags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.workTag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #000000;
+  background: #f0e000;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0;
+}
+
+/* ─── SERVICE AREA ──────────────────────────────────────────── */
+.serviceArea {
+  background: #000000;
+  padding: 5rem 0;
+  border-top: 3px solid #ffffff;
+}
+
+.serviceAreaH2 {
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.serviceAreaBold {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #f0e000;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+  line-height: 1.05;
+}
+
+.serviceAreaSub {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  max-width: 640px;
+}
+
+.serviceAreaContact {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+.serviceAreaContact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ─── CTA ───────────────────────────────────────────────────── */
+.cta {
+  background: #f0e000;
+  color: #000000;
+  padding: 5rem 0;
+}
+
+.ctaH2 {
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 900;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+}
+
+.ctaPhone {
+  display: block;
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.ctaSub {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ─── FOOTER ────────────────────────────────────────────────── */
+.footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 2.5rem 0;
+  border-top: 3px solid #ffffff;
+}
+
+.footerTop {
+  margin-bottom: 1.5rem;
+}
+
+.footerLogo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.35rem;
+}
+
+.footerTagline {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f0e000;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0;
+}
+
+.footerServices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footerServices span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.footerBottom span {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+.footerLinks a {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ─── RESPONSIVE ────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .workGrid {
+    grid-template-columns: 1fr;
+  }
+  .strip {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .stripArrow {
+    display: none;
+  }
+  .stripNum {
+    font-size: 2rem;
+    min-width: unset;
+  }
+  .stripContent {
+    padding: 0;
+  }
+  .valuePillar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .valuePillarWord {
+    min-width: unset;
+  }
+  .statRow {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroGiant {
+    font-size: clamp(3rem, 14vw, 6rem);
+  }
+  .heroContent {
+    padding: 5rem 1.5rem 5rem;
+  }
+  .heroCtas {
+    flex-direction: column;
+  }
+  .heroCtaYellow,
+  .heroCtaWhite {
+    text-align: center;
+  }
+  .heroCornerLeft {
+    font-size: 0.6rem;
+    left: 1rem;
+    top: 1rem;
+  }
+  .heroCornerRight {
+    font-size: 0.6rem;
+    right: 1rem;
+    top: 1rem;
+  }
+  .servicesH2 {
+    padding: 0 1.5rem;
+  }
+  .strip {
+    padding: 2rem 1.5rem;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+  .footerBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footerServices {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .serviceAreaContact {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .heroGiant {
+    font-size: 2.75rem;
+  }
+  .statValue {
+    font-size: 3.5rem;
+  }
+  .ctaH2 {
+    font-size: 3rem;
+  }
+  .ctaPhone {
+    font-size: 2rem;
+  }
+}
